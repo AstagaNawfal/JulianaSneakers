@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="JULIANA SNEAKERS placeholder">
+  <rect width="600" height="600" fill="#f6f6f3"/>
+  <g fill="none" stroke="#c9c9c2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M150 330c14-42 34-70 66-84l44-19c18-8 34-4 48 12l36 40c10 12 24 18 40 18h112c22 0 34 14 34 34v25H140c-12 0-18-8-16-20z"/>
+    <path d="M214 248c18 16 40 26 66 30M258 229c18 16 40 26 66 30M303 212c17 15 38 25 63 29"/>
+    <path d="M140 416h354"/>
+  </g>
+  <text x="300" y="492" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" letter-spacing="6" fill="#0b0b0c">JULIANA SNEAKERS</text>
+  <text x="300" y="524" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" letter-spacing="3" fill="#8b8b8f">GANTI FOTO DI assets/img/</text>
+</svg>

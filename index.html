@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JULIANA SNEAKERS — Step Into Your Style</title>
+  <meta name="description" content="JULIANA SNEAKERS — premium sneaker store. Nike, Jordan, New Balance, PUMA, Salomon, adidas, ASICS, Converse, Vans." />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/img/logo2.png?v=2" />
+  <link rel="apple-touch-icon" href="assets/img/logo2.png?v=2" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <span class="preloader__brand">JULIANA SNEAKERS</span>
+      <span class="preloader__bar"><i></i></span>
+    </div>
+  </div>
+
+  <!-- Toasts -->
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <button class="icon-btn header__burger" id="burgerBtn" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a href="#top" class="logo">JULIANA <span>SNEAKERS</span></a>
+
+      <nav class="nav" id="mainNav" aria-label="Menu utama">
+        <a href="#top" class="nav__link is-active" data-nav="home">Home</a>
+        <a href="#shop" class="nav__link" data-nav="shop">Shop</a>
+        <a href="#brands" class="nav__link" data-nav="brands">Brands</a>
+        <a href="#shop" class="nav__link" data-nav="new" data-quick="new">New Arrivals</a>
+        <a href="#shop" class="nav__link" data-nav="sale" data-quick="sale">Sale</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn" id="searchToggle" aria-label="Search" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <button class="icon-btn" id="wishlistToggle" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5S3.5 15 3.5 8.9A4.4 4.4 0 0 1 12 6.6a4.4 4.4 0 0 1 8.5 2.3C20.5 15 12 20.5 12 20.5Z"/></svg>
+          <span class="badge-count" id="wishlistCount" hidden>0</span>
+        </button>
+        <button class="icon-btn" id="cartToggle" aria-label="Cart">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16l-1.4 11.2a2 2 0 0 1-2 1.8H7.4a2 2 0 0 1-2-1.8Z"/><path d="M9 6a3 3 0 0 1 6 0"/></svg>
+          <span class="badge-count" id="cartCount" hidden>0</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="searchbar" id="searchbar">
+      <div class="searchbar__inner">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" id="navSearch" placeholder="Cari sepatu, brand, kategori…" autocomplete="off" />
+        <button class="searchbar__close" id="searchClose" aria-label="Tutup search">&times;</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-menu__nav">
+      <a href="#top" data-nav="home">Home</a>
+      <a href="#shop" data-nav="shop">Shop</a>
+      <a href="#brands" data-nav="brands">Brands</a>
+      <a href="#shop" data-nav="new" data-quick="new">New Arrivals</a>
+      <a href="#shop" data-nav="sale" data-quick="sale">Sale</a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <span>WhatsApp</span>
+      <span>+62 812-9900-1234</span>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__text">
+        <p class="eyebrow reveal">Sneaker Store — Est. 2019</p>
+        <h1 class="hero__title reveal">
+          Step Into<br /><em>Your</em> Style.
+        </h1>
+        <p class="hero__desc reveal">
+          Koleksi sneaker pilihan dengan stok terjamin 100% original.
+          Dari runway sampai aspal kota — temukan pasangan yang bicara soal kamu.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#shop" class="btn btn--dark">SHOP NOW</a>
+          <a href="#brands" class="btn btn--ghost">Explore B rands</a>
+        </div>
+        <ul class="hero__stats reveal">
+          <li><strong>12K+</strong><span>Happy buyers</span></li>
+          <li><strong>4.9</strong><span>Average rating</span></li>
+          <li><strong>100%</strong><span>Original</span></li>
+        </ul>
+      </div>
+
+      <div class="hero__media reveal">
+        <div class="hero__img hero__img--main">
+          <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=900&q=80" alt="Sneaker merah unggulan" loading="eager" />
+        </div>
+        <div class="hero__img hero__img--sub">
+          <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=600&q=80" alt="Detail sneaker putih" loading="lazy" />
+        </div>
+        <div class="hero__tag">
+          <span>NEW DROP</span>
+          <strong>AW / 26</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>NIKE</span><i>&#9679;</i><span>JORDAN</span><i>&#9679;</i><span>NEW BALANCE</span><i>&#9679;</i><span>PUMA</span><i>&#9679;</i><span>SALOMON</span><i>&#9679;</i><span>ADIDAS</span><i>&#9679;</i><span>ASICS</span><i>&#9679;</i><span>CONVERSE</span><i>&#9679;</i><span>VANS</span><i>&#9679;</i>
+        <span>NIKE</span><i>&#9679;</i><span>JORDAN</span><i>&#9679;</i><span>NEW BALANCE</span><i>&#9679;</i><span>PUMA</span><i>&#9679;</i><span>SALOMON</span><i>&#9679;</i><span>ADIDAS</span><i>&#9679;</i><span>ASICS</span><i>&#9679;</i><span>CONVERSE</span><i>&#9679;</i><span>VANS</span><i>&#9679;</i>
+      </div>
+    </div>
+
+    <!-- BRANDS -->
+    <section class="section" id="brands">
+      <div class="section__head reveal">
+        <p class="eyebrow">Shop by brand</p>
+        <h2 class="section__title">The <em>line-up</em></h2>
+        <p class="section__sub">Klik brand untuk memfilter produk.</p>
+      </div>
+      <div class="brand-grid reveal" id="brandGrid"><!-- js --></div>
+    </section>
+
+    <!-- SHOP -->
+    <section class="section section--shop" id="shop">
+      <div class="section__head reveal">
+        <p class="eyebrow">Catalog</p>
+        <h2 class="section__title">All <em>sneakers</em></h2>
+      </div>
+
+      <div class="toolbar reveal">
+        <div class="toolbar__search">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input type="search" id="shopSearch" placeholder="Search products…" autocomplete="off" />
+        </div>
+
+        <div class="chips" id="categoryChips"><!-- js --></div>
+
+        <div class="toolbar__right">
+          <label class="select-wrap">
+            <span class="sr-only">Sort</span>
+            <select id="sortSelect">
+              <option value="featured">Featured</option>
+              <option value="newest">Newest</option>
+              <option value="price-asc">Price: Low → High</option>
+              <option value="price-desc">Price: High → Low</option>
+              <option value="rating">Top Rated</option>
+            </select>
+          </label>
+          <button class="link-btn" id="clearFilters" hidden>Reset filters</button>
+        </div>
+      </div>
+
+      <p class="result-count" id="resultCount">—</p>
+
+      <div class="product-grid" id="productGrid"><!-- js --></div>
+
+      <div class="empty" id="emptyState" hidden>
+        <p class="empty__title">Tidak ada produk yang cocok.</p>
+        <p class="empty__sub">Coba ubah kata kunci atau reset filter.</p>
+        <button class="btn btn--dark" id="emptyReset">Reset filters</button>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+      <div class="service reveal">
+        <strong>100% Original</strong>
+        <p>Setiap pasang dicek &amp; dijamin keasliannya.</p>
+      </div>
+      <div class="service reveal">
+        <strong>Free Shipping</strong>
+        <p>Gratis ongkir untuk pembelian di atas Rp 1.500.000.</p>
+      </div>
+      <div class="service reveal">
+        <strong>14-Day Return</strong>
+        <p>Tukar ukuran gratis dalam 14 hari.</p>
+      </div>
+      <div class="service reveal">
+        <strong>Fast Reply</strong>
+        <p>WhatsApp support 09.00–21.00 WIB.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--faq" id="faq">
+      <div class="section__head reveal">
+        <p class="eyebrow">Help center</p>
+        <h2 class="section__title">Pertanyaan <em>umum</em></h2>
+      </div>
+      <div class="faq reveal">
+        <details class="faq__item" open>
+          <summary>Apakah semua produk original?<span class="faq__icon"></span></summary>
+          <p>Ya. Semua sneaker di JULIANA SNEAKERS diimpor dari distributor resmi dan lolos pengecekan internal sebelum dikirim.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Berapa lama proses pengiriman?<span class="faq__icon"></span></summary>
+          <p>Jabodetabek 1–2 hari kerja, luar kota 2–5 hari kerja. Pesanan sebelum jam 15.00 WIB dikirim di hari yang sama.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Bisa tukar ukuran?<span class="faq__icon"></span></summary>
+          <p>Bisa, selama 14 hari sejak barang diterima dengan kondisi belum dipakai dan kotak asli masih lengkap.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Metode pembayaran apa saja yang tersedia?<span class="faq__icon"></span></summary>
+          <p>Transfer bank, QRIS, e-wallet (GoPay/OVO/DANA), dan COD khusus area tertentu.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="#top" class="logo logo--light">JULIANA <span>SNEAKERS</span></a>
+        <p>Premium sneaker boutique yang berdiri sejak 2019. Kami memilih setiap pasang dengan standar keaslian, kenyamanan, dan gaya yang tidak lekang oleh waktu.</p>
+        <div class="footer__social">
+          <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://wa.me/6281299001234" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Shop</h4>
+        <a href="#shop" data-quick="all">All Products</a>
+        <a href="#shop" data-quick="new">New Arrivals</a>
+        <a href="#shop" data-quick="sale">Sale</a>
+        <a href="#brands">Brands</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Customer Care</h4>
+        <a href="#faq">FAQ</a>
+        <a href="#" data-info="shipping">Shipping</a>
+        <a href="#" data-info="returns">Return</a>
+        <a href="#" data-info="contact">Contact</a>
+      </div>
+
+      <div class="footer__col footer__col--contact">
+        <h4>Contact</h4>
+        <p>Jl. Melawai Raya No. 12<br />Jakarta Selatan, 12160</p>
+        <p>+62 812-9900-1234</p>
+        <p>hello@julianasneakers.id</p>
+        <p>Setiap hari, 09.00–21.00 WIB</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; 2026 JULIANA SNEAKERS. All rights reserved.</span>
+      <span>Made with clean HTML, CSS &amp; JavaScript.</span>
+    </div>
+  </footer>
+
+  <!-- Backdrop -->
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <!-- CART DRAWER -->
+  <aside class="drawer drawer--right" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer__head">
+      <h3>Your Cart <span id="cartHeadCount">(0)</span></h3>
+      <button class="icon-btn" data-close aria-label="Tutup cart">&times;</button>
+    </div>
+    <div class="drawer__body" id="cartItems"><!-- js --></div>
+    <div class="drawer__foot" id="cartFoot">
+      <div class="row"><span>Subtotal</span><strong id="cartSubtotal">Rp 0</strong></div>
+      <div class="row row--muted"><span>Shipping</span><span id="cartShipping">Dihitung saat checkout</span></div>
+      <div class="row row--total"><span>Total</span><strong id="cartTotal">Rp 0</strong></div>
+      <button class="btn btn--dark btn--block" id="checkoutBtn">CHECKOUT</button>
+      <button class="link-btn link-btn--center" data-close>Lanjut belanja</button>
+    </div>
+  </aside>
+
+  <!-- WISHLIST DRAWER -->
+  <aside class="drawer drawer--right" id="wishlistDrawer" aria-label="Wishlist" aria-hidden="true">
+    <div class="drawer__head">
+      <h3>Wishlist <span id="wishlistHeadCount">(0)</span></h3>
+      <button class="icon-btn" data-close aria-label="Tutup wishlist">&times;</button>
+    </div>
+    <div class="drawer__body" id="wishlistItems"><!-- js --></div>
+  </aside>
+
+  <!-- PRODUCT MODAL -->
+  <div class="modal modal--product" id="productModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="modal__close" data-close aria-label="Tutup">&times;</button>
+    <div class="pm" id="pmContent"><!-- js --></div>
+  </div>
+
+  <!-- CHECKOUT MODAL -->
+  <div class="modal modal--checkout" id="checkoutModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="modal__close" data-close aria-label="Tutup">&times;</button>
+    <div class="checkout" id="checkoutContent">
+      <div class="checkout__head">
+        <p class="eyebrow">Checkout</p>
+        <h3>Selesaikan pesanan</h3>
+      </div>
+
+      <form class="checkout__grid" id="checkoutForm" novalidate>
+        <div class="checkout__form">
+          <label class="field">
+            <span>Nama lengkap *</span>
+            <input type="text" name="name" required placeholder="Nama kamu" />
+          </label>
+          <label class="field">
+            <span>WhatsApp *</span>
+            <input type="tel" name="phone" required placeholder="08xx xxxx xxxx" pattern="[0-9+\s-]{9,}" />
+          </label>
+          <label class="field">
+            <span>Alamat *</span>
+            <textarea name="address" rows="3" required placeholder="Jalan, nomor rumah, RT/RW, kelurahan"></textarea>
+          </label>
+          <div class="field-row">
+            <label class="field">
+              <span>Kota *</span>
+              <input type="text" name="city" required placeholder="Jakarta Selatan" />
+            </label>
+            <label class="field">
+              <span>Kode Pos *</span>
+              <input type="text" name="zip" required placeholder="12160" pattern="[0-9]{5}" />
+            </label>
+          </div>
+
+          <div class="field">
+            <span>Metode pembayaran *</span>
+            <div class="pay-options">
+              <label class="pay"><input type="radio" name="payment" value="Transfer Bank" checked /><span>Transfer Bank</span></label>
+              <label class="pay"><input type="radio" name="payment" value="QRIS" /><span>QRIS</span></label>
+              <label class="pay"><input type="radio" name="payment" value="E-Wallet" /><span>E-Wallet</span></label>
+              <label class="pay"><input type="radio" name="payment" value="COD" /><span>COD</span></label>
+            </div>
+          </div>
+        </div>
+
+        <aside class="checkout__summary">
+          <h4>Ringkasan pesanan</h4>
+          <div class="checkout__items" id="checkoutItems"><!-- js --></div>
+          <div class="row"><span>Subtotal</span><strong id="coSubtotal">Rp 0</strong></div>
+          <div class="row"><span>Ongkir</span><strong id="coShipping">Rp 0</strong></div>
+          <div class="row row--total"><span>Total</span><strong id="coTotal">Rp 0</strong></div>
+          <button type="submit" class="btn btn--dark btn--block">BUAT PESANAN</button>
+          <p class="checkout__note">Kamu akan dihubungi via WhatsApp untuk konfirmasi.</p>
+        </aside>
+      </form>
+    </div>
+  </div>
+
+  <!-- INFO MODAL (contact / shipping / returns) -->
+  <div class="modal modal--info" id="infoModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="modal__close" data-close aria-label="Tutup">&times;</button>
+    <div class="info" id="infoContent"><!-- js --></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
